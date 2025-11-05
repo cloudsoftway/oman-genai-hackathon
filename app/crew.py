@@ -3,15 +3,11 @@ from pydantic import BaseModel
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from crewai.agents.agent_builder.base_agent import BaseAgent
-
-# crewai_tools
 from crewai_tools import (
     FileReadTool,
     FileWriterTool,
     DirectoryReadTool,
 )
-
-# your custom tool
 from app.tools.pdf_reader import PDFReaderTool
 
 
@@ -35,7 +31,7 @@ class CVData(BaseModel):
 
 class CVEligibilityResult(BaseModel):
     """Schema for candidate eligibility evaluation results."""
-    decision: str  # "APPROPRIATE" | "NOT_APPROPRIATE"
+    decision: str
     match_score: float
     missing_must_have_skills: List[str]
     missing_education: bool
@@ -57,10 +53,6 @@ class HRCrew():
 
     @agent
     def cv_reader(self) -> Agent:
-        """
-        First agent: reads all PDF CVs from a folder and writes .txt files.
-        Tool-only agent (PDFReaderTool + DirectoryReadTool + FileWriterTool).
-        """
         return Agent(
             config=self.agents_config['cv_reader'],
             verbose=True,
@@ -74,31 +66,24 @@ class HRCrew():
 
     @agent
     def cv_json_builder(self) -> Agent:
-        """
-        Second agent: takes the .txt CVs and turns them into structured CVData-like JSON.
-        """
         return Agent(
             config=self.agents_config['cv_json_builder'],
             verbose=True,
             tools=[
-                DirectoryReadTool(),  # list txt files in output_path
-                FileReadTool(),       # read each txt CV
-                FileWriterTool(),     # write candidate json
+                DirectoryReadTool(),  #
+                FileReadTool(),
+                FileWriterTool(),
             ],
         )
 
     @agent
     def cv_eligibility_checker(self) -> Agent:
-        """
-        Third agent: compares candidate JSON with the provided job_json
-        and decides if the candidate is appropriate.
-        """
         return Agent(
             config=self.agents_config['cv_eligibility_checker'],
             verbose=True,
             tools=[
-                FileReadTool(),       # to read candidate jsons
-                FileWriterTool(),     # to write eligibility json per candidate
+                FileReadTool(),
+                FileWriterTool(),
             ],
         )
 
