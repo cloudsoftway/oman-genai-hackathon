@@ -1,0 +1,57 @@
+{
+  "job_id": "JD-001",
+  "title": "Senior Python Backend Engineer",
+  "department": "Engineering",
+  "employment_type": "full-time",
+  "location": {
+    "country": "Oman",
+    "city": "Muscat",
+    "remote": true
+  },
+  "reporting_to": "Engineering Manager",
+  "summary": "We are seeking a skilled Senior Backend Engineer proficient in Python and Django to design, develop, and optimize backend systems for our enterprise SaaS products.",
+  "responsibilities": [
+    "Develop and maintain RESTful and GraphQL APIs.",
+    "Design scalable database schemas and optimize queries.",
+    "Integrate with third-party APIs and microservices.",
+    "Collaborate with cross-functional teams including DevOps and frontend engineers.",
+    "Participate in code reviews, testing, and deployment processes."
+  ],
+  "must_have_skills": [
+    "Python",
+    "Django",
+    "REST APIs",
+    "PostgreSQL",
+    "Git"
+  ],
+  "nice_to_have_skills": [
+    "Docker",
+    "AWS",
+    "Celery",
+    "Redis",
+    "CI/CD"
+  ],
+  "experience_required_years": 4,
+  "education_required": [
+    "Bachelor’s degree in Computer Science, Software Engineering, or related field"
+  ],
+  "certifications_required": [],
+  "tools_technologies": [
+    "PostgreSQL",
+    "Docker",
+    "AWS",
+    "Celery",
+    "GitHub Actions"
+  ],
+  "languages_required": [
+    "English"
+  ],
+  "salary_range": {
+    "currency": "USD",
+    "min": 2000,
+    "max": 4000,
+    "period": "month"
+  },
+  "posted_at": "2025-11-01",
+  "valid_until": "2025-12-15"
+}

@@ -1,0 +1,43 @@
+# ------------------------------------------------------------
+# TRAINEE EXERCISE: Agent Configurations
+# ------------------------------------------------------------
+# TODO: Define three agents for the HR recruitment system
+#
+# Each agent needs:
+#   - role: The agent's job title
+#   - goal: What the agent should accomplish
+#   - backstory: The agent's expertise and context
+#
+# ------------------------------------------------------------
+
+cv_reader:
+  role: >
+    TODO
+
+  goal: >
+    TODO
+
+  backstory: >
+    TODO
+
+
+cv_analyzer:
+  role: >
+    TODO
+
+  goal: >
+    TODO
+
+  backstory: >
+    TODO
+
+
+job_matcher:
+  role: >
+    TODO
+
+  goal: >
+    TODO
+
+  backstory: >
+    TODO

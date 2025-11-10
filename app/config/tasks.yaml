@@ -1,0 +1,43 @@
+# ------------------------------------------------------------
+# TRAINEE EXERCISE: Task Configurations
+# ------------------------------------------------------------
+# TODO: Define three tasks for the HR recruitment system
+#
+# Each task needs:
+#   - description: Step-by-step instructions for the agent
+#   - expected_output: What the agent should return
+#   - agent: Which agent performs this task
+#
+# Use placeholders: {pdf_files_path}, {txt_files_path},
+#                   {json_files_path}, {matches_output_path}
+#
+# ------------------------------------------------------------
+
+cv_reader_task:
+  description: >
+    TODO
+
+  expected_output: >
+    TODO
+
+  agent: TODO
+
+
+cv_analyzer_task:
+  description: >
+    TODO
+
+  expected_output: >
+    TODO
+
+  agent: TODO
+
+
+job_matching_task:
+  description: >
+    TODO
+
+  expected_output: >
+    TODO
+
+  agent: TODO

@@ -1,0 +1,5 @@
+crewai==1.2.1
+crewai-tools==1.2.1
+google-genai==1.47.0
+qdrant-client==1.15.1
+PyPDF2==3.0.1

@@ -1,0 +1,59 @@
+{
+  "job_id": "JD-002",
+  "title": "Data Analyst",
+  "department": "Business Intelligence",
+  "employment_type": "full-time",
+  "location": {
+    "country": "United Arab Emirates",
+    "city": "Dubai",
+    "remote": false
+  },
+  "reporting_to": "Head of BI and Analytics",
+  "summary": "We are hiring a Data Analyst to transform business data into meaningful insights and visualizations. The ideal candidate will be proficient in SQL, Power BI, and Excel, with experience in data cleaning and dashboard design.",
+  "responsibilities": [
+    "Collect, clean, and analyze structured and unstructured data from multiple sources.",
+    "Develop and maintain Power BI dashboards for business stakeholders.",
+    "Collaborate with cross-functional teams to identify data needs and reporting requirements.",
+    "Monitor KPIs and generate weekly and monthly performance reports.",
+    "Ensure data accuracy, consistency, and compliance with company policies."
+  ],
+  "must_have_skills": [
+    "Power BI",
+    "SQL",
+    "Excel",
+    "Data Cleaning",
+    "ETL"
+  ],
+  "nice_to_have_skills": [
+    "Python",
+    "Tableau",
+    "Azure Data Factory",
+    "Statistics"
+  ],
+  "experience_required_years": 3,
+  "education_required": [
+    "Bachelor’s degree in Statistics, Data Science, Computer Science, or a related field"
+  ],
+  "certifications_required": [
+    "Microsoft Certified: Data Analyst Associate"
+  ],
+  "tools_technologies": [
+    "Power BI",
+    "SQL Server",
+    "Excel",
+    "Azure",
+    "Python"
+  ],
+  "languages_required": [
+    "English",
+    "Arabic"
+  ],
+  "salary_range": {
+    "currency": "USD",
+    "min": 2000,
+    "max": 4000,
+    "period": "month"
+  },
+  "posted_at": "2025-10-20",
+  "valid_until": "2025-12-31"
+}
